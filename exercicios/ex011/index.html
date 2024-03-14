@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídeas em HTML5</title>
+</head>
+<body>
+  <h1>Imagens Dinâmicas</h1>
+  <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <source media="(max-width:750px )" srcset="Imagens/fotop.png" type="image/png">
+    <source media="(max-width:1000px)" srcset="Imagens/fotom.png" type="image/png">
+    <img src="Imagens/fotog.png" alt="Imagem flexível">
+  </picture>
+
+  <h1>Reproduzindo Áudio</h1>
+  <p>Vamos aprender a reproduzir Áudios em HTML5.</p>
+
+  <audio src="midia/happymistake.mp3" controls autoplay></audio>
+  <!--formatos de audio: MP3,WAG, OGG -->
+  <audio preload="metadata" autoplay controls loop>
+    <source src="midia/English Country Garden - Aaron Kenny.mp3" type="">
+    <source src="midia/happymistake.ogg" type="">
+    <source src="midia/happymistake.wav" type="">
+    <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/happymistake.mp3"> Clique aqui para baixar o arquivo MP3 </a></p>
+  </audio>
+  
+  
+</body>
+</html>
